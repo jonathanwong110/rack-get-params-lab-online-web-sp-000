@@ -24,6 +24,7 @@ class Application
   def handle_search(search_term)
     if @@items.include?(search_term)
       return "#{search_term} is one of our items"
+      @carts << @item
     else
       return "Couldn't find #{search_term}"
     end
