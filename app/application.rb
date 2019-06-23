@@ -16,7 +16,6 @@ class Application
       resp.write handle_search(search_term)
     else
       resp.write "Apples\nOranges\nYour cart is empty\nadded Figs\nWe don't have that item"
-      @@items << item
     end
 
     resp.finish
